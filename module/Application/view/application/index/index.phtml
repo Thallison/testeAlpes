@@ -1,0 +1,50 @@
+<div class="jumbotron">
+    <h1>Bem vindo a API <span class="zf-green">Seminovos BH</span></h1>
+    <p>A API fornece serviço RestFull para retornar os dados dos veículos</p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Listar veículos</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Para listar os veículos basta adicionar a url: /list. <br>
+                    /list aceita 2 parâmetros
+                <ul>
+                    <li>O primeiro é o total de páginas a ser listada dos veículos</li>
+                    <li>O segundo é o tipo de veículo para listar</li>
+                    <ul>
+                        <li>1: Lista veículos</li>
+                        <li>2: Lista motocicletas</li>
+                        <li>3: lista caminhões</li>
+                    </ul>
+                </ul>
+                </p>
+                <p>
+                    Segue exemplo de como acessar:
+                    http://localhost/list/1/1
+                </p>                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Listar detalhes veículos</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Para listar os detalhes dos veículos basta adicionar a url: /list-details/{ID}. <br>
+                </p>
+                <p>
+                    O ID é o id do veículo por exemplo: http://localhost/list-details/1629551
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
