@@ -28,8 +28,6 @@ class IndexController extends AbstractRestfulController {
         $veiculos = array();
         for($i = 1; $i <= $total; $i++){
             $dom = $client->getList($tipo,$i);
-
-            $total_pag = $dom->execute('.total')[0]->textContent;
             $res = $this->organizaArrayJsonList($dom);
             $dados[$i] = $res;
         }
